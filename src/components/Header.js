@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 import compare from "../images/compare.svg";
+import logo from "../images/logo.png";
 import wishlist from "../images/wishlist.svg";
 import user from "../images/user.svg";
 import cart from "../images/cart.svg";
@@ -69,12 +70,7 @@ const Header = () => {
               <p className="text-white mb-0">Free Shipping Over Rs.100</p>
             </div>
             <div className="col-6">
-              <p className="text-end text-white mb-0">
-                Hotline:
-                <a className="text-white" href="tel:+91 8264954234">
-                  +91 8264954234
-                </a>
-              </p>
+
             </div>
           </div>
         </div>
@@ -85,7 +81,11 @@ const Header = () => {
             <div className="col-2">
               <h2>
                 <Link className="text-white" to="/ ">
-                  Cart Corner
+                  <img
+                    src={logo}
+                    className="img-fluid rounded-3"
+                    alt="logo"
+                  />
                 </Link>
               </h2>
             </div>
